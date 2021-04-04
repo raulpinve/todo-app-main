@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo app</title>
+</head>
+<body>
+    <div class="head">
+        <div class="header">
+            <div class="wrapper">
+                <h2>TODO</h2>
+                <div class="header-switch-theme">
+                    <input type="checkbox" name="" id="checkbox-switch-theme">
+                    <label for="checkbox-switch-theme" class="switch-theme-mode"></label>
+                </div>
+            </div>
+        </div>
+        <div class="create-to-do-element">
+            <div class="wrapper">
+               <div class="to-do-element">
+                   <div class="to-do-element-list">
+                       <div class="to-do-element-list-checkbox">
+                            <div class="create-to-do-checkbox-radius"></div>         
+                       </div>
+                       <div class="to-do-element-list-description">
+                           <input type="text" name="" id="input-create-todo" placeholder="Create a new todo...">
+                       </div>
+                    </div> 
+                    <div class="to-do-element-delete">
+                
+                    </div>        
+               </div> 
+            </div>
+        </div>        
+    </div>
+
+    <section class="todo-elements">
+        <div class="wrapper">
+            <div class="container-to-do-elements" id="container-todo">
+                <!-- <div class="to-do-element">
+                        <div class="to-do-element-list">
+                            <div class="to-do-element-list-checkbox">
+                                <label for="checkbox_1" class="container-checkbox">
+                                    <input type="checkbox" name="" id="checkbox_1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="to-do-element-list-description">
+                                <label for="checkbox_1">
+                                    <span>Complete online JavaScript Course</span>
+                                </label>                            
+                            </div>
+                        </div> 
+                        <div class="to-do-element-delete">
+                            <button class="to-do-element-delete-btn">
+                                <img src="images/icon-cross.svg" alt="">
+                            </button>
+                        </div>        
+                </div>                 -->
+            </div>     
+
+            <div class="container-clear-completed-to-do-list">
+                <span class="span-items">5 items left</span>
+                <ul class="todo-list-menu">
+                    <li><a href="#" class="filters selected" data-filter="all">All</a></li>
+                    <li><a href="#" class="filters" data-filter="native">Native</a></li>
+                    <li><a href="#" class="filters" data-filter="completed">Completed</a></li>
+                </ul>
+                <span class="span-clear clear-completed">Clear complete</span>
+            </div>
+            
+          
+
+            <span class="to-do-list-drag-drop">Drag and drop to reorder list</span>
+        </div>
+    </section>
+
+    
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
